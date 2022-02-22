@@ -1,4 +1,4 @@
 ---
-title: Hello World  - 123
+title: Hello World
 body: Velit sunt ea ipsum nostrud cupidatat ipsum ex Lorem.
 ---

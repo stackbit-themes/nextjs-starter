@@ -1,6 +1,4 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const sourcebit = require("sourcebit");
+const sourcebitConfig = require("./sourcebit.js");
 
-module.exports = nextConfig
+sourcebit.fetch(sourcebitConfig);

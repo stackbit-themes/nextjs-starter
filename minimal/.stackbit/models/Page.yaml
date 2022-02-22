@@ -5,3 +5,6 @@ fields:
     name: title
     default: This is a new page
     required: true
+  - type: text
+    name: body
+    default: Amet exercitation nulla nostrud et ipsum voluptate.

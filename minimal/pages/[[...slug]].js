@@ -4,8 +4,11 @@ import sourcebitCache from "../.sourcebit-nextjs-cache.json";
 
 function Page({ page }) {
   return (
-    <div>
-      <h1>{page.frontmatter.title}</h1>
+    <div data-sb-object-id={page?.__metadata?.id}>
+      <h1 data-sb-field-path="title">{page.frontmatter.title}</h1>
+      {page.frontmatter.body && (
+        <p data-sb-field-path="body">{page.frontmatter.body}</p>
+      )}
     </div>
   );
 }

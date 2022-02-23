@@ -3268,10 +3268,10 @@ sourcebit-source-filesystem@^0.2.0:
     fs-extra "^10.0.0"
     lodash "^4.17.21"
 
-sourcebit-target-next@^0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/sourcebit-target-next/-/sourcebit-target-next-0.7.1.tgz#6fa0b4336390786bf99ce8afdf2e6f7cbeba4d3f"
-  integrity sha512-1hUp5O9TuvSsKK23uaENvMaJhFBne4TaaGMG2RoSfAzti1achZo7w7nP3oN7F2+xQcIWZxmXuH+fSj05gYEGaw==
+sourcebit-target-next@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/sourcebit-target-next/-/sourcebit-target-next-0.8.1.tgz#f77acfa5b31b7fd6c1cc28951b5ffb3b96b8791a"
+  integrity sha512-YP71rvUarSK0JqE+EJaEgSZvBSLxmQpaB4usK2YzRaRa5GX/rcXqir477GR62tT25lAGXIO5R8bFVRDOT37mEg==
   dependencies:
     "@sindresorhus/slugify" "^1.0.0"
     fs-extra "^10.0.0"

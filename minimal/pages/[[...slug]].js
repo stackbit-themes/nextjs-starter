@@ -1,5 +1,5 @@
 import { sourcebitDataClient } from "sourcebit-target-next";
-import { withRemoteDataUpdates } from "sourcebit-target-next/with-remote-data-updates";
+import { hotContentReload } from "sourcebit-target-next/hot-content-reload";
 import sourcebitCache from "../.sourcebit-nextjs-cache.json";
 
 function Page({ page }) {
@@ -28,4 +28,7 @@ export async function getStaticPaths() {
   };
 }
 
-export default withRemoteDataUpdates(Page);
+const withHotContentReload = hotContentReload({
+  disable: process.env.NODE_ENV === "production",
+});
+export default withHotContentReload(Page);

@@ -31,7 +31,7 @@ function rebuildIndex() {
     return {
       ...page,
       __metadata: {
-        id: file.replace(process.cwd(), ""),
+        id: file.replace(process.cwd(), "").slice(1),
         urlPath: file
           .replace(pagesDir, "")
           .replace(".json", "")

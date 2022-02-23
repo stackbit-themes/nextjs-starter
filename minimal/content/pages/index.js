@@ -1,5 +1,5 @@
 export const index = {
-  title: "Hello World #1",
+  title: "Home Page #1",
   body: "Velit sunt ea ipsum nostrud cupidatat ipsum ex Lorem.",
   __metadata: { id: "/content/pages/index.json", urlPath: "/", name: "index" },
 }

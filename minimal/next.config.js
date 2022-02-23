@@ -9,7 +9,7 @@ const prettier = require("prettier");
 
 // Content directory references
 const pagesDir = path.join(process.cwd(), "content", "pages");
-const pagesPattern = path.join(pagesDir, "*.json");
+const pagesPattern = path.join(pagesDir, "**/*.json");
 const indexFilePath = path.join(pagesDir, "index.js");
 
 /**

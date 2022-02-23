@@ -15,4 +15,4 @@ contentModels:
   Page:
     isPage: true
     urlPath: "/{slug}"
-    newFilePath: "{slug}.md"
+    newFilePath: "{slug}.json"

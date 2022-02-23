@@ -1,5 +1,5 @@
 {
-  "name": "stackbit-minimal-example",
+  "name": "stackbit-minimal",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,12 +11,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "chokidar": "^3.5.3",
+    "fast-glob": "^3.2.11",
     "next": "12.1.0",
+    "prettier": "^2.5.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "sourcebit": "^0.11.0",
-    "sourcebit-source-filesystem": "^0.2.0",
-    "sourcebit-target-next": "^0.8.1"
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
     "@stackbit/cli": "^0.2.2",

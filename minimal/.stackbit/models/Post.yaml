@@ -1,9 +1,9 @@
-name: Page
+name: Post
 hideContent: true
 fields:
   - type: string
     name: layout
-    default: Page
+    default: Post
     required: true
     hidden: true
   - type: string

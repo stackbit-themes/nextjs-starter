@@ -1,4 +1,5 @@
 {
-    "title": "Home Page #1",
-    "body": "Velit sunt ea ipsum nostrud cupidatat ipsum ex Lorem."
+  "layout": "Page",
+  "title": "Home Page #1",
+  "body": "Velit sunt ea ipsum nostrud cupidatat ipsum ex Lorem."
 }

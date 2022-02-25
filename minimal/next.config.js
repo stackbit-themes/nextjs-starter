@@ -67,7 +67,12 @@ function rebuildIndex() {
   });
   // Write to file.
   fs.writeFileSync(indexFilePath, formattedFileContent);
+  const relIndexFilePath = indexFilePath.replace(process.cwd(), "").slice(1);
+  console.log(`Wrote data cache file: ${relIndexFilePath}`);
 }
+
+// Run the function.
+rebuildIndex();
 
 // Watch for file changes when not in production.
 if (process.env.NODE_ENV !== "production") {

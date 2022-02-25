@@ -1,4 +1,3 @@
-const sourcebit = require("sourcebit");
-const sourcebitConfig = require("./sourcebit.js");
+const withSourcebit = require("sourcebit").sourcebitNext();
 
-sourcebit.fetch(sourcebitConfig);
+module.exports = withSourcebit({});

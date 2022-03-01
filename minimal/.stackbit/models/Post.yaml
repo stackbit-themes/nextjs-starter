@@ -1,11 +1,7 @@
 name: Post
 hideContent: true
+layout: Post
 fields:
-  - type: string
-    name: layout
-    default: Post
-    required: true
-    hidden: true
   - type: string
     name: title
     default: This is a new page

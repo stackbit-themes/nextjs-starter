@@ -1,11 +1,7 @@
 name: Page
 hideContent: true
+layout: Page
 fields:
-  - type: string
-    name: layout
-    default: Page
-    required: true
-    hidden: true
   - type: string
     name: title
     default: This is a new page

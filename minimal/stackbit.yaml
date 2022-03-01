@@ -5,7 +5,7 @@ cmsName: git
 publishDir: .next
 dataDir: content/data
 pagesDir: content
-pageLayoutKey: layout
+# pageLayoutKey: layout
 assets:
   referenceType: static
   staticDir: public
@@ -19,4 +19,4 @@ contentModels:
   Post:
     isPage: true
     urlPath: "blog/{slug}"
-    newFilePath: "posts/{moment_format(date, 'YYYY-MM-DD')}-{slug}.json"
+    newFilePath: "posts/{slug}.json"

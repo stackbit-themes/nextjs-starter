@@ -1,0 +1,10 @@
+type: object
+name: CardGridSection
+label: Card Grid
+groups:
+  - sectionComponent
+fields:
+  - type: string
+    name: title
+    label: Title
+    default: Hero Section Title

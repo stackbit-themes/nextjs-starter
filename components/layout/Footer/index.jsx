@@ -5,9 +5,12 @@ import styles from "../../../styles/layout/Footer.module.css";
 export const Footer = ({ body }) => {
   return (
     <div
-      data-sb-field-path="content/data/config.json:footer.body"
       className={styles.footer}
-      dangerouslySetInnerHTML={{ __html: body }}
-    />
+      data-sb-field-path="content/data/config.json:footer">
+      <div
+        data-sb-field-path=".body"
+        dangerouslySetInnerHTML={{ __html: body }}
+      />
+    </div>
   );
 };

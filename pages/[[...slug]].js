@@ -16,9 +16,7 @@ const siteConfig = dataObjectByType("SiteConfig");
 const FlexiblePage = ({ page, footer }) => {
   return (
     <div className={styles.container}>
-      <div data-sb-object-id={page?.__metadata?.id} className={styles.main}>
-        <h1 data-sb-field-path="title">{page.frontmatter.title}</h1>
-
+      <div data-sb-object-id={page?.__metadata?.id}>
         {page.frontmatter.sections?.length > 0 && (
           <div>
             {page.frontmatter.sections.map((section, index) => (
@@ -32,7 +30,9 @@ const FlexiblePage = ({ page, footer }) => {
         )}
       </div>
 
-      <Footer {...footer} />
+      <div className={styles.footer}>
+        <Footer {...footer} />
+      </div>
     </div>
   );
 };

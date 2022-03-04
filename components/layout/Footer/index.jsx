@@ -9,6 +9,7 @@ export const Footer = ({ body }) => {
       data-sb-field-path="content/data/config.json:footer">
       <div
         data-sb-field-path=".body"
+        className={styles.footerContent}
         dangerouslySetInnerHTML={{ __html: body }}
       />
     </div>

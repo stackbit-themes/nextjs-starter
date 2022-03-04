@@ -1,10 +1,17 @@
 type: object
 name: CardGridSection
 label: Card Grid
+labelField: heading
 groups:
   - sectionComponent
 fields:
   - type: string
-    name: title
+    name: heading
     label: Title
-    default: Hero Section Title
+  - type: markdown
+    name: subheading
+  - type: list
+    name: cards
+    items:
+      type: model
+      models: [Card]

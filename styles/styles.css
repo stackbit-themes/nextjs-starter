@@ -2,6 +2,7 @@
   --color-white: #ffffff;
   --color-black: #02001d;
   --color-gray-100: #ecf7ff;
+  --color-gray-500: #75747d;
   --color-red: #f65458;
   --color-blue: #4c57c5;
   --color-yellow: #ffde00;
@@ -19,7 +20,12 @@ body {
   padding: 0;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0 0 1rem 0;
 }
 
@@ -69,7 +75,7 @@ p {
 /* --- HeroSection --- */
 
 .hero-container {
-  padding: 4rem 2rem;
+  padding: 8rem 2rem;
   text-align: center;
 }
 
@@ -91,6 +97,46 @@ p {
 .hero-buttons .button {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+/* --- CardGrid --- */
+
+.card-grid-container {
+  margin: 0 auto;
+  max-width: 48rem;
+}
+
+.card-grid-heading {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card-grid-subheading {
+  text-align: center;
+}
+
+.card-grid-cards {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+/* --- Card --- */
+
+.card-container {
+  border: 1px solid var(--color-gray-500);
+  padding: 1rem;
+}
+
+.card-container:hover {
+  border-color: var(--color-blue);
+  color: var(--color-blue);
+}
+
+.card-subheading {
+  line-height: 1.5;
+  margin: 0;
 }
 
 /* --- Button --- */

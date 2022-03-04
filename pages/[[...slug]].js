@@ -1,4 +1,5 @@
 import { toFieldPath } from "@stackbit/annotations";
+import Head from "next/head";
 
 import { DynamicComponent } from "../components/DynamicComponent";
 import { Footer } from "../components/Footer";
@@ -12,6 +13,10 @@ const siteConfig = dataObjectByType("SiteConfig");
 const FlexiblePage = ({ page, footer }) => {
   return (
     <div className="page-container">
+      <Head>
+        <title>{page.frontmatter.title}</title>
+      </Head>
+
       <div data-sb-object-id={page?.__metadata?.id}>
         {page.frontmatter.sections?.length > 0 && (
           <div>
@@ -25,7 +30,6 @@ const FlexiblePage = ({ page, footer }) => {
           </div>
         )}
       </div>
-
       <div className="page-footer">
         <Footer {...footer} />
       </div>

@@ -8,13 +8,15 @@ import { mapProps as mapFooterProps } from "../components/layout/Footer/mapProps
 import { pageUrlPath } from "../utils/page-utils";
 import { documentsByType, dataObjectByType } from "../utils/sourcebit-utils";
 
+import styles from "../styles/pages/Page.module.css";
+
 const allPages = documentsByType("Page");
 const siteConfig = dataObjectByType("SiteConfig");
 
 const FlexiblePage = ({ page, footer }) => {
   return (
-    <div>
-      <div data-sb-object-id={page?.__metadata?.id}>
+    <div className={styles.container}>
+      <div data-sb-object-id={page?.__metadata?.id} className={styles.main}>
         <h1 data-sb-field-path="title">{page.frontmatter.title}</h1>
 
         {page.frontmatter.sections?.length > 0 && (

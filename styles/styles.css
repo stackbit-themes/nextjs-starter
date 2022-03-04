@@ -19,9 +19,17 @@ body {
   padding: 0;
 }
 
+h1 {
+  margin: 0 0 1rem 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 * {
@@ -69,4 +77,33 @@ a {
   font-size: 3rem;
 }
 
+.hero-subheading {
+  font-size: 1.25rem;
+  max-width: 36rem;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+.hero-buttons {
+  margin-top: 3rem;
+}
+
+.hero-buttons .button {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 /* --- Button --- */
+
+.button {
+  background-color: var(--color-blue);
+  border: 0.125rem solid var(--color-blue);
+  font-weight: bold;
+  color: var(--color-white);
+  padding: 1rem 3rem;
+}
+
+.button.theme-secondary {
+  background-color: var(--color-white);
+  color: var(--color-blue);
+}

@@ -10,9 +10,11 @@ export const HeroSection = (props) => {
       <h1 {...toFieldPath(".heading")} className="hero-heading">
         {props.heading}
       </h1>
-      <Markdown {...toFieldPath(".subheading")}>{props.subheading}</Markdown>
+      <Markdown {...toFieldPath(".subheading")} className="hero-subheading">
+        {props.subheading}
+      </Markdown>
       {props.buttons?.length > 0 && (
-        <div>
+        <div class="hero-buttons">
           {props.buttons.map((button, idx) => (
             <Button {...button} key={idx} {...toFieldPath(`.buttons.${idx}`)} />
           ))}

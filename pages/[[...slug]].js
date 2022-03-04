@@ -3,8 +3,6 @@ import { toFieldPath } from "@stackbit/annotations";
 import { DynamicComponent } from "../components/DynamicComponent";
 import { Footer } from "../components/layout/Footer";
 
-import { mapProps as mapFooterProps } from "../components/layout/Footer/mapProps";
-
 import { pageUrlPath } from "../utils/page-utils";
 import { documentsByType, dataObjectByType } from "../utils/sourcebit-utils";
 
@@ -42,8 +40,7 @@ export default FlexiblePage;
 export const getStaticProps = async ({ params }) => {
   const pagePath = "/" + (params?.slug || []).join("/");
   const page = allPages.find((page) => pageUrlPath(page) === pagePath);
-  const footer = await mapFooterProps(siteConfig.footer);
-  return { props: { page, footer } };
+  return { props: { page, footer: siteConfig.footer } };
 };
 
 export const getStaticPaths = async () => {

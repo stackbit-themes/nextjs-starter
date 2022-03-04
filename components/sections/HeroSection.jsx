@@ -4,12 +4,10 @@ import { toFieldPath, pickDataAttrs } from "@stackbit/annotations";
 
 import { Button } from "../atoms/Button";
 
-import styles from "../../styles/components/HeroSection.module.css";
-
 export const HeroSection = (props) => {
   return (
-    <div {...pickDataAttrs(props)} className={styles.hero}>
-      <h1 {...toFieldPath(".heading")} className={styles.heroHeading}>
+    <div {...pickDataAttrs(props)} className="hero-container">
+      <h1 {...toFieldPath(".heading")} className="hero-heading">
         {props.heading}
       </h1>
       <Markdown {...toFieldPath(".subheading")}>{props.subheading}</Markdown>

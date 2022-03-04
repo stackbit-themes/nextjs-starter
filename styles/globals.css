@@ -28,4 +28,45 @@ a {
   box-sizing: border-box;
 }
 
+/* --- Page --- */
+
+.page-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.page-footer {
+  margin-top: auto;
+}
+
+/* --- Footer --- */
+
+.footer-container {
+  border-top: 1px solid var(--color-gray-100);
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-content {
+  margin: 0 auto;
+  max-width: 24rem;
+}
+
+.footer-content a {
+  color: var(--color-blue);
+}
+
+/* --- HeroSection --- */
+
+.hero-container {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 3rem;
+}
+
 /* --- Button --- */

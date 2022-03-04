@@ -6,14 +6,12 @@ import { Footer } from "../components/layout/Footer";
 import { pageUrlPath } from "../utils/page-utils";
 import { documentsByType, dataObjectByType } from "../utils/sourcebit-utils";
 
-import styles from "../styles/pages/Page.module.css";
-
 const allPages = documentsByType("Page");
 const siteConfig = dataObjectByType("SiteConfig");
 
 const FlexiblePage = ({ page, footer }) => {
   return (
-    <div className={styles.container}>
+    <div className="page-container">
       <div data-sb-object-id={page?.__metadata?.id}>
         {page.frontmatter.sections?.length > 0 && (
           <div>
@@ -28,7 +26,7 @@ const FlexiblePage = ({ page, footer }) => {
         )}
       </div>
 
-      <div className={styles.footer}>
+      <div className="page-footer">
         <Footer {...footer} />
       </div>
     </div>

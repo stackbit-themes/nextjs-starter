@@ -18,7 +18,7 @@ export const CardGridSection = (props) => {
         </Markdown>
       )}
       {props.cards?.length > 0 && (
-        <div class="card-grid-cards">
+        <div className="card-grid-cards">
           {props.cards.map((card, idx) => (
             <Card {...card} key={idx} {...toFieldPath(`.cards.${idx}`)} />
           ))}

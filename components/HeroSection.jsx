@@ -16,7 +16,7 @@ export const HeroSection = (props) => {
         </Markdown>
       )}
       {props.buttons?.length > 0 && (
-        <div class="hero-buttons">
+        <div className="hero-buttons">
           {props.buttons.map((button, idx) => (
             <Button {...button} key={idx} {...toFieldPath(`.buttons.${idx}`)} />
           ))}

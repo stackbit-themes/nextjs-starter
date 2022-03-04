@@ -61,6 +61,7 @@ p {
   border-top: 1px solid var(--color-gray-100);
   padding: 1rem;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .footer-content {
@@ -70,6 +71,7 @@ p {
 
 .footer-content a {
   color: var(--color-blue);
+  border-bottom: 1px solid var(--color-blue);
 }
 
 /* --- HeroSection --- */
@@ -90,13 +92,17 @@ p {
   margin: 0 auto;
 }
 
+.hero-subheading a {
+  color: var(--color-blue);
+  border-bottom: 1px solid var(--color-blue);
+}
+
 .hero-buttons {
   margin-top: 3rem;
 }
 
 .hero-buttons .button {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 1rem 1rem;
 }
 
 /* --- CardGrid --- */
@@ -118,15 +124,23 @@ p {
 .card-grid-cards {
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .card-grid-cards {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* --- Card --- */
 
 .card-container {
-  border: 1px solid var(--color-gray-500);
+  border: 2px solid var(--color-gray-500);
   padding: 1rem;
+  transition: all 0.35s ease;
 }
 
 .card-container:hover {
@@ -142,11 +156,17 @@ p {
 /* --- Button --- */
 
 .button {
+  display: inline-block;
   background-color: var(--color-blue);
   border: 0.125rem solid var(--color-blue);
   font-weight: bold;
   color: var(--color-white);
   padding: 1rem 3rem;
+  transition: all 0.35s ease;
+}
+
+.button:hover {
+  opacity: 0.85;
 }
 
 .button.theme-secondary {

@@ -1,7 +1,7 @@
 import { toFieldPath } from "@stackbit/annotations";
 
 import { DynamicComponent } from "../components/DynamicComponent";
-import { Footer } from "../components/layout/Footer";
+import { Footer } from "../components/Footer";
 
 import { pageUrlPath } from "../utils/page-utils";
 import { documentsByType, dataObjectByType } from "../utils/sourcebit-utils";

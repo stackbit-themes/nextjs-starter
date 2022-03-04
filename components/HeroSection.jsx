@@ -2,7 +2,7 @@ import * as React from "react";
 import Markdown from "markdown-to-jsx";
 import { toFieldPath, pickDataAttrs } from "@stackbit/annotations";
 
-import { Button } from "../atoms/Button";
+import { Button } from "./Button";
 
 export const HeroSection = (props) => {
   return (

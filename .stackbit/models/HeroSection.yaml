@@ -1,7 +1,6 @@
 type: object
 name: HeroSection
 label: Hero
-# labelField: title
 groups:
   - sectionComponent
 fields:

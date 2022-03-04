@@ -1,5 +1,23 @@
-# Minimal Stackbit Example Using Sourcebit
+# Stackbit Next.js Starter
 
-🚧 WIP ...
+🚧 This is a work-in-progress. 🚧
 
-This is a minimal example of a Stackbit project. It has just enough to get started.
+## Getting Started
+
+Get up and running quickly by running the following command:
+
+```txt
+npx create-stackbit-app
+```
+
+Then follow the instructions output to your terminal.
+
+## Learn the Basics
+
+Follow the [getting started tutorial](https://docs.stackbit.com/getting-started/) while running this project locally to get a feel for how Stackbit works.
+
+Or jump to individual topics [in the docs](https://docs.stackbit.com/).
+
+## Support & Feedback
+
+[Join us on Discord](https://discord.gg/HUNhjVkznH) for community support and to provide feedback to us.

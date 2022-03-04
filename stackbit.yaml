@@ -4,7 +4,7 @@ nodeVersion: "14"
 cmsName: git
 publishDir: .next
 dataDir: content/data
-pagesDir: content
+pagesDir: content/pages
 pageLayoutKey: type
 assets:
   referenceType: static
@@ -15,4 +15,4 @@ contentModels:
   Page:
     isPage: true
     urlPath: "/{slug}"
-    newFilePath: "pages/{slug}.md"
+    newFilePath: "{slug}.md"

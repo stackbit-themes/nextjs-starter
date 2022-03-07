@@ -7,7 +7,7 @@ import { Card } from "./Card";
 export const CardGridSection = (props) => {
   return (
     <div {...pickDataAttrs(props)} className="card-grid-container">
-      <h2 {...toFieldPath(".title")} className="card-grid-heading">
+      <h2 {...toFieldPath(".heading")} className="card-grid-heading">
         {props.heading}
       </h2>
       {props.subheading && (

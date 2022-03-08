@@ -1,6 +1,6 @@
 # Stackbit Next.js Starter
 
-🚧 This is a work-in-progress. 🚧
+Begin a new Stackbit project or learn to add Stackbit to an existing site.
 
 ## Getting Started
 

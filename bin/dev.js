@@ -4,7 +4,7 @@ const open = require("open");
 const { exec } = require("child_process");
 
 const command =
-  "./node_modules/.bin/npm-run-all --parallel next:dev stackbit:dev";
+  "node_modules/.bin/npm-run-all --parallel next:dev stackbit:dev";
 
 const devProcess = exec(command, (err) => {
   console.error(`Failed to execute ${command}`, err);

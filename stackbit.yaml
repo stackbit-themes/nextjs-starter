@@ -5,7 +5,6 @@ cmsName: git
 publishDir: .next
 dataDir: content/data
 pagesDir: content/pages
-pageLayoutKey: type
 assets:
   referenceType: static
   staticDir: public
@@ -16,3 +15,9 @@ contentModels:
     isPage: true
     urlPath: "/{slug}"
     newFilePath: "{slug}.md"
+  BlogPage:
+    isPage: true
+    singleInstance: true
+    urlPath: "/blog"
+    file: "blog/index.md"
+    newFilePath: "blog/index.md"

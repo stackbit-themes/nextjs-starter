@@ -42,6 +42,32 @@ p {
   box-sizing: border-box;
 }
 
+/* --- Utility Classes --- */
+
+.pt-0 {
+  padding-top: 0px;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pt-32 {
+  padding-top: 32px;
+}
+
+.pb-32 {
+  padding-bottom: 32px;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
 /* --- Page --- */
 
 .page-container {

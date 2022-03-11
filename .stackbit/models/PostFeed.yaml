@@ -12,3 +12,10 @@ fields:
   - type: markdown
     name: subheading
     default: Subheading goes here ...
+  - type: style
+    name: styles
+    styles:
+      self:
+        padding: ["y0", "y32"]
+      heading:
+        margin: ["b0", "b32"]

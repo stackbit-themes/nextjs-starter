@@ -41,4 +41,12 @@ sections:
   - heading: Post Feed Title
     subheading: Subhbeading goes here ...
     type: PostFeed
+    styles:
+      self:
+        padding:
+          top: '0'
+          bottom: '0'
+      heading:
+        margin:
+          bottom: '0'
 ---

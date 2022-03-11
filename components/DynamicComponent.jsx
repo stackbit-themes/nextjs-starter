@@ -1,13 +1,13 @@
 import dynamic from "next/dynamic";
 
 const componentsMap = {
-  // sections
   CardGridSection: dynamic(() =>
     namedComponent(import("./CardGridSection"), "CardGridSection")
   ),
   HeroSection: dynamic(() =>
     namedComponent(import("./HeroSection"), "HeroSection")
   ),
+  PostFeed: dynamic(() => namedComponent(import("./PostFeed"), "PostFeed")),
 };
 
 export const DynamicComponent = (props) => {

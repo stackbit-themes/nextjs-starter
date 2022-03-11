@@ -1,0 +1,14 @@
+type: object
+name: PostFeed
+label: Post Feed
+labelField: heading
+groups:
+  - sectionComponent
+fields:
+  - type: string
+    name: heading
+    label: Title
+    default: Post Feed Title
+  - type: markdown
+    name: subheading
+    default: Subheading goes here ...

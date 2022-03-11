@@ -42,6 +42,14 @@ export default FlexiblePage;
 export const getStaticProps = async ({ params }) => {
   const pagePath = "/" + (params?.slug || []).join("/");
   const page = allPages.find((page) => pageUrlPath(page) === pagePath);
+
+  const posts = pagesByLayout("Post").sort((a, b) => {
+    return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
+  });
+  page.frontmatter.sections.map((section) => {
+    if (section.type === "PostFeed") section.posts = posts;
+  });
+
   return { props: { page, footer: siteConfig.footer } };
 };
 

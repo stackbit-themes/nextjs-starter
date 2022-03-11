@@ -1,0 +1,8 @@
+name: BlogPage
+layout: Blog
+label: Blog
+hideContent: true
+fields:
+  - type: string
+    name: title
+    required: true

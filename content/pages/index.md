@@ -38,15 +38,15 @@ sections:
           Set up global styles and add a styling toolbar to individual
           components in the visual editor.
         url: 'https://docs.stackbit.com/how-to-guides/styles/'
-  - heading: Post Feed Title
-    subheading: Subhbeading goes here ...
-    type: PostFeed
+  - heading: Recent Posts
+    subheading: Here is a list of recent posts.
     styles:
       self:
         padding:
-          top: '0'
-          bottom: '0'
+          top: '16'
+          bottom: '16'
       heading:
         margin:
-          bottom: '0'
+          bottom: '16'
+    type: PostFeed
 ---

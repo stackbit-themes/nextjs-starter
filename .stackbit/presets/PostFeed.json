@@ -1,0 +1,26 @@
+{
+  "model": "PostFeed",
+  "presets": [
+    {
+      "label": "Most Recent Posts",
+      "thumbnail": "images/post-feed-default.png",
+      "data": {
+        "heading": "Recent Posts",
+        "subheading": "Here is a list of recent posts.",
+        "styles": {
+          "self": {
+            "padding": {
+              "top": "16",
+              "bottom": "16"
+            }
+          },
+          "heading": {
+            "margin": {
+              "bottom": "16"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

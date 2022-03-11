@@ -1,7 +1,9 @@
 ---
 title: My Second Post
 date: '2022-03-01'
-excerpt: Excerpt goes here ...
+excerpt: >-
+  Sit dolore dolore velit fugiat cupidatat fugiat incididunt dolore commodo
+  incididunt cillum.
 layout: Post
 ---
 Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis.

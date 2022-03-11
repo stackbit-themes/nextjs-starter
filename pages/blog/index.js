@@ -16,6 +16,8 @@ export default BlogPage;
 
 export const getStaticProps = async () => {
   const page = pagesByLayout("Blog")[0];
-  const posts = pagesByLayout("Post").sort((a, b) => new Date(b) - new Date(a));
+  const posts = pagesByLayout("Post").sort((a, b) => {
+    return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
+  });
   return { props: { page, posts } };
 };

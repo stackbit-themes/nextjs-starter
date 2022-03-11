@@ -1,5 +1,5 @@
 ---
-type: Page
+layout: Page
 title: Stackbit Next.js Starter
 sections:
   - heading: Welcome to Stackbit!

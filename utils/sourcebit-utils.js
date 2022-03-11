@@ -3,14 +3,14 @@ import dataCache from "../.sourcebit-nextjs-cache.json";
 export const allDocuments = dataCache.objects;
 
 /**
- * Extract objects from the data cache by matching the "type" property in
+ * Extract objects from the data cache by matching the "layout" property in
  * frontmatter.
  *
  * @param {string} type Name of the model
  * @returns {array} Sourcebit data objects
  */
-export function documentsByType(type) {
-  return allDocuments.filter((doc) => doc?.frontmatter?.type === type);
+export function pagesByLayout(layout) {
+  return allDocuments.filter((doc) => doc?.frontmatter?.layout === layout);
 }
 
 /**
@@ -20,6 +20,6 @@ export function documentsByType(type) {
  * @param {string} type Name of the model
  * @returns {object} First matching object
  */
-export function dataObjectByType(type) {
+export function dataByType(type) {
   return allDocuments.find((obj) => obj?.type === type);
 }

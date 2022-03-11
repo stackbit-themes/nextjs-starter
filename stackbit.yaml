@@ -5,7 +5,6 @@ cmsName: git
 publishDir: .next
 dataDir: content/data
 pagesDir: content/pages
-pageLayoutKey: type
 assets:
   referenceType: static
   staticDir: public

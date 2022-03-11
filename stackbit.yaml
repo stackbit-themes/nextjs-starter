@@ -21,3 +21,7 @@ contentModels:
     urlPath: "/blog"
     file: "blog/index.md"
     newFilePath: "blog/index.md"
+  Post:
+    isPage: true
+    urlPath: "/blog/{slug}"
+    newFilePath: "blog/{slug}.md"

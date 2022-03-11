@@ -5,10 +5,10 @@ import { DynamicComponent } from "../components/DynamicComponent";
 import { Footer } from "../components/Footer";
 
 import { pageUrlPath } from "../utils/page-utils";
-import { documentsByType, dataObjectByType } from "../utils/sourcebit-utils";
+import { pagesByLayout, dataByType } from "../utils/sourcebit-utils";
 
-const allPages = documentsByType("Page");
-const siteConfig = dataObjectByType("SiteConfig");
+const allPages = pagesByLayout("Page");
+const siteConfig = dataByType("SiteConfig");
 
 const FlexiblePage = ({ page, footer }) => {
   return (

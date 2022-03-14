@@ -1,0 +1,8 @@
+type: data
+name: ThemeStyle
+label: Style Config
+file: styles.json
+fields:
+  - type: color
+    name: primaryColor
+    label: Primary Color

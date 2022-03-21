@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node ./bin/dev.js",
-    "next:dev": "next dev ",
-    "stackbit:dev": "stackbit dev",
+    "dev": "next dev",
+    "stackbit": "stackbit",
+    "stackbit-dev": "node ./bin/dev.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

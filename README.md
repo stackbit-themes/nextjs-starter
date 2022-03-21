@@ -7,10 +7,18 @@ Begin a new Stackbit project or learn to add Stackbit to an existing site.
 Get up and running quickly by running the following command:
 
 ```txt
-npx create-stackbit-app
+npx create-stackbit-app [project-name]
 ```
 
-Then follow the instructions output to your terminal.
+Then change into `[project-name]` directory (default: `my-stackbit-app`) and start the Next.js dev server and Stackbit local dev in separate terminal tabs/windows.
+
+```txt
+cd [project-name]
+npm run dev
+
+# in a separate tab/window
+npm run stackbit-dev
+```
 
 ## Learn the Basics
 

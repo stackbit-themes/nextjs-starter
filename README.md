@@ -10,7 +10,7 @@ Get up and running quickly by running the following command:
 npx create-stackbit-app [project-name]
 ```
 
-Then change into `[project-name]` directory (default: `my-stackbit-app`) and start the Next.js dev server and Stackbit local dev in separate terminal tabs/windows.
+Then change into `[project-name]` directory (default: `my-stackbit-site`) and start the Next.js dev server and Stackbit local dev in separate terminal tabs/windows.
 
 ```txt
 cd [project-name]

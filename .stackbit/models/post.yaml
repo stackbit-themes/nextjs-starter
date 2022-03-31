@@ -1,0 +1,14 @@
+# .stackbit/models/Post.yaml
+
+name: Post
+layout: Post
+fields:
+  - type: string
+    name: title
+    required: true
+  - type: date
+    name: date
+    required: true
+  - type: string
+    name: excerpt
+    default: Excerpt goes here ...

@@ -13,7 +13,8 @@ export const CardGridSection = (props) => {
       {props.subheading && (
         <Markdown
           {...toFieldPath(".subheading")}
-          className="card-grid-subheading">
+          className="card-grid-subheading"
+        >
           {props.subheading}
         </Markdown>
       )}

@@ -40,7 +40,10 @@ const FlexiblePage = ({ page, footer }) => {
 export default FlexiblePage;
 
 export const getStaticProps = async ({ params }) => {
-  const pagePath = "/" + (params?.slug || []).join("/");
+  const pagePath =
+    typeof params?.slug === "string"
+      ? params?.slug
+      : "/" + (params?.slug || []).join("/");
   const page = allPages.find((page) => pageUrlPath(page) === pagePath);
   return { props: { page, footer: siteConfig.footer } };
 };

@@ -1,21 +1,19 @@
 :root {
   --color-white: #ffffff;
   --color-black: #02001d;
-  --color-gray-100: #ecf7ff;
+  --color-gray-100: #F3F4F6;
   --color-gray-500: #75747d;
-  --color-red: #f65458;
-  --color-blue: #4c57c5;
-  --color-yellow: #ffde00;
+  --color-light-blue: #4C57C5;
+  --color-blue: #1F2B9D;
 
   font-size: 16px;
 }
 
 html,
 body {
-  background-color: var(--color-white);
+  background-color: var(--color-gray-100);
   color: var(--color-black);
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -27,6 +25,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 1rem 0;
+  font-weight: 500;
 }
 
 a {
@@ -55,18 +54,19 @@ p {
   margin-top: auto;
 }
 
+/* --- Layout --- */
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 48rem;
+}
+
 /* --- Footer --- */
 
 .footer-container {
-  border-top: 1px solid var(--color-gray-100);
+  border-top: 1px solid var(--color-gray-500);
   padding: 1rem;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.footer-content {
-  margin: 0 auto;
-  max-width: 24rem;
 }
 
 .footer-content a {
@@ -77,48 +77,48 @@ p {
 /* --- HeroSection --- */
 
 .hero-container {
-  padding: 8rem 2rem;
-  text-align: center;
+  background-color: var(--color-blue); ;
+  color: var(--color-gray-100);
+  padding:6rem 3vw 8rem;
+  margin-bottom: 3rem;
 }
 
 .hero-heading {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .hero-subheading {
-  font-size: 1.25rem;
-  max-width: 36rem;
-  line-height: 1.5;
-  margin: 0 auto;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+p.hero-subheading {
+  margin-top: 0;
 }
 
 .hero-subheading a {
-  color: var(--color-blue);
-  border-bottom: 1px solid var(--color-blue);
+  border-bottom: 1px solid var(--color-white);
 }
 
 .hero-buttons {
-  margin-top: 3rem;
-}
-
-.hero-buttons .button {
-  margin: 0 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 /* --- CardGrid --- */
 
 .card-grid-container {
-  margin: 0 auto;
-  max-width: 48rem;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
 .card-grid-heading {
-  font-size: 2rem;
-  text-align: center;
+  font-size: 2.5rem;
 }
 
 .card-grid-subheading {
-  text-align: center;
+  font-size: 1.125rem;
 }
 
 .card-grid-cards {
@@ -126,7 +126,6 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1.5rem;
-  padding: 0 1.5rem;
 }
 
 @media (min-width: 600px) {
@@ -137,10 +136,15 @@ p {
 
 /* --- Card --- */
 
+.card-heading {
+  font-size: 1.5rem;
+}
+
 .card-container {
   border: 2px solid var(--color-gray-500);
   padding: 1rem;
   transition: all 0.35s ease;
+  position: relative;
 }
 
 .card-container:hover {
@@ -148,20 +152,28 @@ p {
   color: var(--color-blue);
 }
 
-.card-subheading {
-  line-height: 1.5;
-  margin: 0;
+.card-container:before {
+  border-bottom: 2px solid var(--color-gray-500);
+  border-right: 2px solid var(--color-gray-500);
+  content: "";
+  height: 100%;
+  left: 0.33333em;
+  position: absolute;
+  top: 0.33333em;
+  width: 100%;
 }
+
 
 /* --- Button --- */
 
 .button {
+  border-radius: 0.2rem;
+  background-color: var(--color-light-blue);
+  border: 0.1rem solid var(--color-light-blue);
   display: inline-block;
-  background-color: var(--color-blue);
-  border: 0.125rem solid var(--color-blue);
-  font-weight: bold;
   color: var(--color-white);
-  padding: 1rem 3rem;
+  font-size: 1.125rem;
+  padding: 1rem 2rem;
   transition: all 0.35s ease;
 }
 
@@ -170,6 +182,7 @@ p {
 }
 
 .button.theme-secondary {
-  background-color: var(--color-white);
-  color: var(--color-blue);
+  background-color: transparent;
+  border-color: var(--color-white);
+  color: var(--color-white);
 }

@@ -3,8 +3,8 @@
   --color-black: #02001d;
   --color-gray-100: #F3F4F6;
   --color-gray-500: #75747d;
-  --color-light-blue: #4C57C5;
-  --color-blue: #1F2B9D;
+  --color-blue: #4C57C5;
+  --color-yellow: #FFDE00;
 
   font-size: 16px;
 }
@@ -13,7 +13,7 @@ html,
 body {
   background-color: var(--color-gray-100);
   color: var(--color-black);
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Helvetica Neue",sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -24,8 +24,8 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 400;
   margin: 0 0 1rem 0;
-  font-weight: 500;
 }
 
 a {
@@ -34,6 +34,7 @@ a {
 }
 
 p {
+  line-height: 1.4;
   margin-bottom: 1rem;
 }
 
@@ -44,9 +45,9 @@ p {
 /* --- Page --- */
 
 .page-container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
+  height: 100vh;
   position: relative;
 }
 
@@ -70,17 +71,19 @@ p {
 }
 
 .footer-content a {
-  color: var(--color-blue);
   border-bottom: 1px solid var(--color-blue);
+  color: var(--color-blue);
 }
 
 /* --- HeroSection --- */
 
 .hero-container {
-  background-color: var(--color-blue); ;
+  background-image: url("/bg.svg");
+  background-color: var(--color-black);
+  background-repeat: repeat;
   color: var(--color-gray-100);
-  padding:6rem 3vw 8rem;
   margin-bottom: 3rem;
+  padding:6rem 3vw 8rem;
 }
 
 .hero-heading {
@@ -90,10 +93,6 @@ p {
 .hero-subheading {
   font-size: 1.5rem;
   margin-bottom: 3rem;
-}
-
-p.hero-subheading {
-  margin-top: 0;
 }
 
 .hero-subheading a {
@@ -106,11 +105,19 @@ p.hero-subheading {
   gap: 1rem;
 }
 
+@media (max-width: 600px) {
+  .hero-heading {
+    font-size: 3rem;
+  }
+}
+
 /* --- CardGrid --- */
 
 .card-grid-container {
   padding-left: 3vw;
   padding-right: 3vw;
+  position: relative;
+  z-index: 1;
 }
 
 .card-grid-heading {
@@ -122,10 +129,10 @@ p.hero-subheading {
 }
 
 .card-grid-cards {
-  margin-top: 3rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1.5rem;
+  margin-top: 3rem;
 }
 
 @media (min-width: 600px) {
@@ -141,10 +148,10 @@ p.hero-subheading {
 }
 
 .card-container {
-  border: 2px solid var(--color-gray-500);
-  padding: 1rem;
-  transition: all 0.35s ease;
+  border: 1px solid var(--color-blue);
+  padding: 1.5rem 2rem;
   position: relative;
+  transition: all 0.35s ease;
 }
 
 .card-container:hover {
@@ -153,14 +160,20 @@ p.hero-subheading {
 }
 
 .card-container:before {
-  border-bottom: 2px solid var(--color-gray-500);
-  border-right: 2px solid var(--color-gray-500);
+  border: 1px solid var(--color-blue);
   content: "";
   height: 100%;
-  left: 0.33333em;
+  left: -1px;
   position: absolute;
-  top: 0.33333em;
+  top: -1px;
+  transform: translate(0.33333em, 0.33333em);
+  transition: .25s;
   width: 100%;
+  z-index: -1;
+}
+
+.card-container:hover:before {
+  transform: translate(0,0);
 }
 
 
@@ -168,12 +181,12 @@ p.hero-subheading {
 
 .button {
   border-radius: 0.2rem;
-  background-color: var(--color-light-blue);
-  border: 0.1rem solid var(--color-light-blue);
+  background-color: var(--color-yellow);
+  border: 0.1rem solid var(--color-yellow);
+  color: var(--color-black);
   display: inline-block;
-  color: var(--color-white);
   font-size: 1.125rem;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   transition: all 0.35s ease;
 }
 

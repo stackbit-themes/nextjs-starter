@@ -20,11 +20,7 @@ const FlexiblePage = ({ page, footer }) => {
         {page.frontmatter.sections?.length > 0 && (
           <div {...toFieldPath('sections')}>
             {page.frontmatter.sections.map((section, index) => (
-              <DynamicComponent
-                key={index}
-                {...section}
-                {...toFieldPath(`sections.${index}`)}
-              />
+              <DynamicComponent key={index} {...section} {...toFieldPath(`.${index}`)} />
             ))}
           </div>
         )}

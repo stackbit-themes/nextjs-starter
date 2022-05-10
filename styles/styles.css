@@ -43,16 +43,6 @@ p {
 }
 
 /* --- Layout --- */
-.page {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  position: relative;
-}
-
-.footer {
-  margin-top: auto;
-}
 
 .outer {
   padding-left: 3vw;
@@ -66,6 +56,9 @@ p {
 }
 
 /* --- Footer --- */
+.footer {
+  margin-top: 3rem;
+}
 
 .footer-container {
   border-top: 1px solid var(--color-gray-500);
@@ -85,13 +78,18 @@ p {
   background-image: url("/bg.svg");
   background-repeat: repeat;
   color: var(--color-gray-100);
-  margin-bottom: 3rem;
   padding-bottom: 8rem;
   padding-top: 6rem;
 }
 
 .hero-heading {
-  font-size: 4rem;
+  font-size: 3rem;
+}
+
+@media (min-width: 601px) {
+  .hero-heading {
+    font-size: 4rem;
+  }
 }
 
 .hero-subheading {
@@ -109,16 +107,11 @@ p {
   gap: 1rem;
 }
 
-@media (max-width: 600px) {
-  .hero-heading {
-    font-size: 3rem;
-  }
-}
-
 /* --- CardGrid --- */
 
 .card-grid {
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
   position: relative;
   z-index: 1;
 }
@@ -138,7 +131,7 @@ p {
   margin-top: 3rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 601px) {
   .card-grid-cards {
     grid-template-columns: 1fr 1fr;
   }
@@ -179,15 +172,12 @@ p {
   font-size: 1.5rem;
 }
 
-
-
-
 /* --- Button --- */
 
 .button {
-  border-radius: 0.2rem;
   background-color: var(--color-yellow);
   border: 0.1rem solid var(--color-yellow);
+  border-radius: 0.2rem;
   color: var(--color-black);
   display: inline-block;
   font-size: 1.125rem;
@@ -195,12 +185,12 @@ p {
   transition: all 0.35s ease;
 }
 
-.button:hover {
-  opacity: 0.85;
-}
-
 .button.theme-secondary {
   background-color: transparent;
   border-color: var(--color-white);
   color: var(--color-white);
+}
+
+.button:hover {
+  opacity: 0.85;
 }

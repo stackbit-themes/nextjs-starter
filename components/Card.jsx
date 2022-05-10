@@ -6,7 +6,7 @@ import { toFieldPath, pickDataAttrs } from "@stackbit/annotations";
 export const Card = (props) => {
   return (
     <Link href={props.url ?? "/"}>
-      <a {...pickDataAttrs(props)} className="card-container">
+      <a {...pickDataAttrs(props)} className="card">
         <h3 {...toFieldPath(".heading")} className="card-heading">
           {props.heading}
         </h3>

@@ -6,23 +6,25 @@ import { Button } from "./Button";
 
 export const HeroSection = (props) => {
   return (
-    <div {...pickDataAttrs(props)} className="hero-container">
-      <div className="inner">
-        <h1 {...toFieldPath(".heading")} className="hero-heading">
-          {props.heading}
-        </h1>
+    <div className="hero outer" {...pickDataAttrs(props)}>
+      <div className="hero-container inner">
         {props.subheading && (
-          <Markdown {...toFieldPath(".subheading")} className="hero-subheading">
+          <h1 className="hero-heading" {...toFieldPath(".heading")}>
+            {props.heading}
+          </h1>
+        )}
+        {props.subheading && (
+          <Markdown className="hero-subheading" {...toFieldPath(".subheading")}>
             {props.subheading}
           </Markdown>
         )}
         {props.buttons?.length > 0 && (
-          <div className="hero-buttons">
+          <div className="hero-buttons" {...toFieldPath(".buttons")}>
             {props.buttons.map((button, idx) => (
               <Button
                 {...button}
                 key={idx}
-                {...toFieldPath(`.buttons.${idx}`)}
+                {...toFieldPath(`.${idx}`)}
               />
             ))}
           </div>

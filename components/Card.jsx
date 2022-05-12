@@ -6,12 +6,12 @@ import { toFieldPath, pickDataAttrs } from "@stackbit/annotations";
 export const Card = (props) => {
   return (
     <Link href={props.url ?? "/"}>
-      <a {...pickDataAttrs(props)} className="card-container">
-        <h3 {...toFieldPath(".heading")} className="card-heading">
+      <a {...pickDataAttrs(props)} className="card">
+        <h3 className="card-heading" {...toFieldPath(".heading")}>
           {props.heading}
         </h3>
         {props.subheading && (
-          <Markdown {...toFieldPath(".subheading")} className="card-subheading">
+          <Markdown className="card-subheading" {...toFieldPath(".subheading")}>
             {props.subheading}
           </Markdown>
         )}

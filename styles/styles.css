@@ -158,14 +158,14 @@ p {
   left: -1px;
   position: absolute;
   top: -1px;
-  transform: translate(0.33333em, 0.33333em);
-  transition: .25s;
+  transform: translate(0,0);
+  transition: all 0.35s ease;
   width: 100%;
   z-index: -1;
 }
 
 .card:hover:before {
-  transform: translate(0,0);
+  transform: translate(0.33333em, 0.33333em);
 }
 
 .card-heading {

@@ -13,7 +13,10 @@ module.exports = {
     },
     {
       module: require("sourcebit-target-next"),
-      options: { flattenAssetUrls: true },
+      options: { 
+        flattenAssetUrls: true,
+        liveUpdate: isDev
+      },
     },
   ],
 };

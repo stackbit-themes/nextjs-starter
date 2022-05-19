@@ -1,4 +1,5 @@
 import { toObjectId, toFieldPath } from "@stackbit/annotations";
+import { hotContentReload } from "sourcebit-target-next/hot-content-reload";
 import Head from "next/head";
 
 import { DynamicComponent } from "../components/DynamicComponent";

@@ -1,4 +1,4 @@
-import { toFieldPath } from "@stackbit/annotations";
+import { toObjectId, toFieldPath } from "@stackbit/annotations";
 import { hotContentReload } from "sourcebit-target-next/hot-content-reload";
 import Head from "next/head";
 
@@ -10,27 +10,20 @@ import { pagesByLayout, dataByType } from "../utils/sourcebit-utils";
 
 const FlexiblePage = ({ page, footer }) => {
   return (
-    <div className="page-container">
+    <div className="page">
       <Head>
         <title>{page.frontmatter.title}</title>
       </Head>
-
-      <div data-sb-object-id={page?.__metadata?.id}>
+      <div {...toObjectId(page?.__metadata?.id)}>
         {page.frontmatter.sections?.length > 0 && (
-          <div>
+          <div {...toFieldPath('sections')}>
             {page.frontmatter.sections.map((section, index) => (
-              <DynamicComponent
-                key={index}
-                {...section}
-                {...toFieldPath(`sections.${index}`)}
-              />
+              <DynamicComponent key={index} {...section} {...toFieldPath(`.${index}`)} />
             ))}
           </div>
         )}
       </div>
-      <div className="page-footer">
-        <Footer {...footer} />
-      </div>
+      <Footer {...footer} />
     </div>
   );
 };

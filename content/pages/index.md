@@ -2,8 +2,8 @@
 layout: Page
 title: Stackbit Next.js Starter
 sections:
-  - heading: Welcome to Stackbit!
-    type: HeroSection
+  - type: HeroSection
+    heading: Welcome to Stackbit!
     subheading: >
       You've just [unlocked visual editing
       capabilities](https://www.stackbit.com/) in this Next.js app.

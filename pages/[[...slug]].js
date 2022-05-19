@@ -7,9 +7,6 @@ import { Footer } from "../components/Footer";
 import { pageUrlPath } from "../utils/page-utils";
 import { pagesByLayout, dataByType } from "../utils/sourcebit-utils";
 
-const allPages = pagesByLayout("Page");
-const siteConfig = dataByType("SiteConfig");
-
 const FlexiblePage = ({ page, footer }) => {
   return (
     <div className="page">
@@ -30,9 +27,12 @@ const FlexiblePage = ({ page, footer }) => {
   );
 };
 
-export default FlexiblePage;
+const withHotContentReload = hotContentReload();
+export default withHotContentReload(FlexiblePage);
 
 export const getStaticProps = async ({ params }) => {
+  const allPages = await pagesByLayout("Page");
+  const siteConfig = await dataByType("SiteConfig");
   const pagePath =
     typeof params?.slug === "string"
       ? params?.slug
@@ -42,6 +42,7 @@ export const getStaticProps = async ({ params }) => {
 };
 
 export const getStaticPaths = async () => {
+  const allPages = await pagesByLayout("Page");
   return {
     paths: allPages.map((page) => pageUrlPath(page)),
     fallback: false,

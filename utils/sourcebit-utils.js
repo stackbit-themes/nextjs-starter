@@ -1,6 +1,8 @@
-import dataCache from "../.sourcebit-nextjs-cache.json";
+import { sourcebitDataClient } from 'sourcebit-target-next';
 
-export const allDocuments = dataCache.objects;
+async function allDocuments() {
+  return (await sourcebitDataClient.getData()).objects;
+}
 
 /**
  * Extract objects from the data cache by matching the "layout" property in
@@ -9,8 +11,8 @@ export const allDocuments = dataCache.objects;
  * @param {string} type Name of the model
  * @returns {array} Sourcebit data objects
  */
-export function pagesByLayout(layout) {
-  return allDocuments.filter((doc) => doc?.frontmatter?.layout === layout);
+export async function pagesByLayout(layout) {
+  return (await allDocuments()).filter((doc) => doc?.frontmatter?.layout === layout);
 }
 
 /**
@@ -20,6 +22,6 @@ export function pagesByLayout(layout) {
  * @param {string} type Name of the model
  * @returns {object} First matching object
  */
-export function dataByType(type) {
-  return allDocuments.find((obj) => obj?.type === type);
+export async function dataByType(type) {
+  return (await allDocuments()).find((obj) => obj?.type === type);
 }

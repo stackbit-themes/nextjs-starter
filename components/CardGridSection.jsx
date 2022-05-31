@@ -5,10 +5,7 @@ import { Card } from "./Card";
 
 export const CardGridSection = (props) => {
   return (
-    <div
-      className="card-grid outer"
-      data-sb-field-path={props["data-sb-field-path"]}
-    >
+    <div className="card-grid outer" data-sb-field-path={props["data-sb-field-path"]}>
       <div className="card-grid-container inner">
         {props.heading && (
           <h2 className="card-grid-heading" data-sb-field-path=".heading">
@@ -16,10 +13,7 @@ export const CardGridSection = (props) => {
           </h2>
         )}
         {props.subheading && (
-          <Markdown
-            className="card-grid-subheading"
-            data-sb-field-path=".subheading"
-          >
+          <Markdown className="card-grid-subheading" data-sb-field-path=".subheading">
             {props.subheading}
           </Markdown>
         )}

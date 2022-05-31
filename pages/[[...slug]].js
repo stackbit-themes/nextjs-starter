@@ -13,7 +13,7 @@ const FlexiblePage = ({ page, footer }) => {
       <Head>
         <title>{page.frontmatter.title}</title>
       </Head>
-      <div data-sb-object-id={(page?.__metadata?.id)}>
+      <div data-sb-object-id={page?.__metadata?.id}>
         {page.frontmatter.sections?.length > 0 && (
           <div data-sb-field-path="sections">
             {page.frontmatter.sections.map((section, index) => (

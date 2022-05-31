@@ -4,10 +4,7 @@ import Link from "next/link";
 export const Button = (props) => {
   return (
     <Link href={props.url ?? "/"}>
-      <a
-        data-sb-field-path={props["data-sb-field-path"]}
-        className={`button theme-${props.theme}`}
-      >
+      <a className={`button theme-${props.theme}`} data-sb-field-path={props["data-sb-field-path"]}>
         <span data-sb-field-path=".label">{props.label}</span>
       </a>
     </Link>

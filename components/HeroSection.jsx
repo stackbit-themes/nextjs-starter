@@ -1,31 +1,32 @@
 import * as React from "react";
 import Markdown from "markdown-to-jsx";
-import { toFieldPath, pickDataAttrs } from "@stackbit/annotations";
 
 import { Button } from "./Button";
 
 export const HeroSection = (props) => {
   return (
-    <div className="hero outer" {...pickDataAttrs(props)}>
+    <div
+      className="hero outer"
+      data-sb-field-path={props["data-sb-field-path"]}
+    >
       <div className="hero-container inner">
         {props.subheading && (
-          <h1 className="hero-heading" {...toFieldPath(".heading")}>
+          <h1 className="hero-heading" data-sb-field-path=".heading">
             {props.heading}
           </h1>
         )}
         {props.subheading && (
-          <Markdown className="hero-subheading" {...toFieldPath(".subheading")}>
+          <Markdown
+            className="hero-subheading"
+            data-sb-field-path=".subheading"
+          >
             {props.subheading}
           </Markdown>
         )}
         {props.buttons?.length > 0 && (
-          <div className="hero-buttons" {...toFieldPath(".buttons")}>
+          <div className="hero-buttons" data-sb-field-path=".buttons">
             {props.buttons.map((button, idx) => (
-              <Button
-                {...button}
-                key={idx}
-                {...toFieldPath(`.${idx}`)}
-              />
+              <Button {...button} key={idx} data-sb-field-path={`.${idx}`} />
             ))}
           </div>
         )}

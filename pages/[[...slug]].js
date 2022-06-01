@@ -1,4 +1,3 @@
-import { toObjectId, toFieldPath } from "@stackbit/annotations";
 import { hotContentReload } from "sourcebit-target-next/hot-content-reload";
 import Head from "next/head";
 
@@ -14,11 +13,11 @@ const FlexiblePage = ({ page, footer }) => {
       <Head>
         <title>{page.frontmatter.title}</title>
       </Head>
-      <div {...toObjectId(page?.__metadata?.id)}>
+      <div data-sb-object-id={page?.__metadata?.id}>
         {page.frontmatter.sections?.length > 0 && (
-          <div {...toFieldPath('sections')}>
+          <div data-sb-field-path="sections">
             {page.frontmatter.sections.map((section, index) => (
-              <DynamicComponent key={index} {...section} {...toFieldPath(`.${index}`)} />
+              <DynamicComponent key={index} {...section} data-sb-field-path={`.${index}`} />
             ))}
           </div>
         )}

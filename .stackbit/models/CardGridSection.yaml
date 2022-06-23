@@ -1,9 +1,8 @@
-type: object
 name: CardGridSection
 label: Card Grid
 labelField: heading
 groups:
-  - sectionComponent
+  - SectionComponents
 fields:
   - type: string
     name: heading

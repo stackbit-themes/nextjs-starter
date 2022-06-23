@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <link rel="icon" href="/favicon.svg" />
-      </Head>{" "}
+      </Head>
       <Component {...pageProps} />
     </>
   );

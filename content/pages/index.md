@@ -1,5 +1,5 @@
 ---
-layout: Page
+type: Page
 title: Stackbit Next.js Starter
 sections:
   - type: HeroSection

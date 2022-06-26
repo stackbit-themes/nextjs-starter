@@ -36,6 +36,7 @@ function readContent(file) {
   }
 
   content.__id = file;
+  content.__url = fileToUrl(file);
   return content;
 }
 

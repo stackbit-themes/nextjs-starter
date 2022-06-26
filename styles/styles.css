@@ -55,6 +55,10 @@ p {
   max-width: 48rem;
 }
 
+.small-margin {
+  margin: 1vw;
+}
+
 /* --- Footer --- */
 .footer {
   margin-top: 3rem;

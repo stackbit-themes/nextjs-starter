@@ -2,7 +2,7 @@ import Head from "next/head";
 
 import { DynamicComponent } from "../components/DynamicComponent";
 import { Footer } from "../components/Footer";
-import { allUrls, siteConfig, urlToContent } from "../utils/content";
+import { pagesByType, siteConfig, urlToContent } from "../utils/content";
 
 const FlexiblePage = ({ page, siteConfig }) => {
   return (
@@ -23,7 +23,7 @@ const FlexiblePage = ({ page, siteConfig }) => {
           </div>
         )}
       </div>
-      <Footer {...siteConfig.footer} />
+      <Footer siteConfig={siteConfig} />
     </div>
   );
 };
@@ -36,8 +36,9 @@ export function getStaticProps({ params }) {
 }
 
 export function getStaticPaths() {
+  const pages = pagesByType('Page');
   return {
-    paths: allUrls(),
+    paths: Object.keys(pages),
     fallback: false,
   };
 }

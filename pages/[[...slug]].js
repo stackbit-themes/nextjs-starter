@@ -1,8 +1,8 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-import { DynamicComponent } from "../components/DynamicComponent";
-import { Footer } from "../components/Footer";
-import { pagesByType, siteConfig, urlToContent } from "../utils/content";
+import { DynamicComponent } from '../components/DynamicComponent';
+import { Footer } from '../components/Footer';
+import { pagesByType, siteConfig, urlToContent } from '../utils/content';
 
 const FlexiblePage = ({ page, siteConfig }) => {
   return (
@@ -31,7 +31,7 @@ const FlexiblePage = ({ page, siteConfig }) => {
 export default FlexiblePage;
 
 export function getStaticProps({ params }) {
-  const url = "/" + (params.slug || []).join("/");
+  const url = '/' + (params.slug || []).join('/');
   return { props: { page: urlToContent(url), siteConfig: siteConfig() } };
 }
 

@@ -1,5 +1,5 @@
-import { HeroSection } from "./HeroSection";
-import { CardGridSection } from "./CardGridSection";
+import { HeroSection } from './HeroSection';
+import { CardGridSection } from './CardGridSection';
 
 const componentsMap = {
   HeroSection: HeroSection,

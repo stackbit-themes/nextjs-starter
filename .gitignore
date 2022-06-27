@@ -36,7 +36,3 @@ yarn-error.log*
 
 # stackbit
 .cache
-
-# sourcebit
-.sourcebit-cache.json
-.sourcebit-nextjs-cache.json

@@ -1,6 +1,4 @@
-type: object
 name: Button
-label: Button
 labelField: label
 fields:
   - type: string

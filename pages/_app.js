@@ -1,13 +1,13 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-import "../styles/styles.css";
+import '../styles/styles.css';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
         <link rel="icon" href="/favicon.svg" />
-      </Head>{" "}
+      </Head>
       <Component {...pageProps} />
     </>
   );

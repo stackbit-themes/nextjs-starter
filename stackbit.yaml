@@ -1,10 +1,10 @@
-stackbitVersion: ~0.4.0
-ssgName: nextjs
-nodeVersion: "14"
+stackbitVersion: ~0.5.0
 cmsName: git
-publishDir: .next
+ssgName: nextjs
+nodeVersion: "16"
 dataDir: content/data
 pagesDir: content/pages
+pageLayoutKey: type
 assets:
   referenceType: static
   staticDir: public

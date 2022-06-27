@@ -1,5 +1,4 @@
 name: Page
-layout: Page
 hideContent: true
 fields:
   - type: string
@@ -8,8 +7,6 @@ fields:
     required: true
   - type: list
     name: sections
-    label: Sections
     items:
       type: model
-      groups:
-        - sectionComponent
+      groups: [SectionComponents]

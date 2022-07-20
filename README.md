@@ -6,7 +6,7 @@
 
 </div>
 
-This is a multi-page, production-ready project built with Next.js and Tailwind, equipped with visual editing capabilities using Stackbit. It uses markdown files as the content source. See below for [other Stackbit example projects](#other-stackbit-projects).
+This is a minimal starting point for new Stackbit projects. It is built with Next.js and equipped with visual editing capabilities using Stackbit. It uses markdown files as the content source. See below for [other Stackbit example projects](#other-stackbit-projects).
 
 **⚡ Demo:** [stackbit-nextjs-starter.netlify.app](https://stackbit-nextjs-starter.netlify.app/)
 

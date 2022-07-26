@@ -6,25 +6,29 @@ import { Button } from './Button';
 export const HeroSection = (props) => {
   return (
     <div
-      className="hero outer"
+      className="bg-black px-12 text-gray-100 pb-8 pt-12"
+      style={{ backgroundImage: `url('/bg.svg')` }}
       data-sb-field-path={props['data-sb-field-path']}
     >
-      <div className="hero-container inner">
+      <div className="mx-auto max-w-3xl">
         {props.heading && (
-          <h1 className="hero-heading" data-sb-field-path=".heading">
+          <h1 className="text-5xl md:text-6xl" data-sb-field-path=".heading">
             {props.heading}
           </h1>
         )}
         {props.subheading && (
           <Markdown
-            className="hero-subheading"
+            className="mb-12 text-2xl"
             data-sb-field-path=".subheading"
+            options={{
+              overrides: { a: { props: { className: 'underline' } } },
+            }}
           >
             {props.subheading}
           </Markdown>
         )}
         {props.buttons?.length > 0 && (
-          <div className="hero-buttons" data-sb-field-path=".buttons">
+          <div className="flex flex-wrap gap-4" data-sb-field-path=".buttons">
             {props.buttons.map((button, idx) => (
               <Button {...button} key={idx} data-sb-field-path={`.${idx}`} />
             ))}

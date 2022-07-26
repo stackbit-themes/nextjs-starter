@@ -35,7 +35,7 @@
   .sb-card:before {
     @apply absolute
       border
-    border-blue
+    border-primary
       duration-300
       transition-all;
 

@@ -6,7 +6,7 @@ export const Card = (props) => {
   return (
     <Link href={props.url ?? '/'}>
       <a
-        className="sb-card border border-blue py-6 px-8 relative transition-all hover:border-blue hover:text-blue"
+        className="sb-card border border-primary py-6 px-8 relative transition-all hover:border-primary hover:text-primary"
         data-sb-field-path={props['data-sb-field-path']}
       >
         {props.heading && (

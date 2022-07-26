@@ -9,7 +9,9 @@ export const Footer = ({ siteConfig }) => {
         <Markdown
           data-sb-field-path=".body"
           options={{
-            overrides: { a: { props: { className: 'text-blue underline' } } },
+            overrides: {
+              a: { props: { className: 'text-primary underline' } },
+            },
           }}
         >
           {siteConfig.footer.body}

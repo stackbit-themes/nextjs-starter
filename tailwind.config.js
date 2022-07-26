@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme');
+const globalStyles = require('./content/data/styles.json');
 
 module.exports = {
   content: [
@@ -9,14 +10,14 @@ module.exports = {
   ],
   theme: {
     colors: {
+      primary: globalStyles.primaryColor,
+      secondary: globalStyles.secondaryColor,
       white: '#ffffff',
       black: '#02001d',
       gray: {
         100: '#f3f4f6',
         500: '#75747d',
       },
-      blue: '#4c57c5',
-      yellow: '#ffde00',
     },
     extend: {
       fontFamily: {

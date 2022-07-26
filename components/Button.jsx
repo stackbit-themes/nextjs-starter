@@ -2,7 +2,7 @@ import * as React from 'react';
 import Link from 'next/link';
 
 const classMap = {
-  primary: 'bg-yellow border-yellow text-black',
+  primary: 'bg-secondary border-secondary text-black',
   secondary: 'bg-transparent border-white text-white',
 };
 

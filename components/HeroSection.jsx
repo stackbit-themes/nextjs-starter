@@ -4,9 +4,15 @@ import Markdown from 'markdown-to-jsx';
 import { Button } from './Button';
 
 export const HeroSection = (props) => {
+  const paddingClasses = props.styles?.self?.padding ?? [
+    'px-12',
+    'pt-12',
+    'pb-8',
+  ];
+
   return (
     <div
-      className="bg-black px-12 text-gray-100 pb-8 pt-12"
+      className={`bg-black text-gray-100 ${paddingClasses.join(' ')}`}
       style={{ backgroundImage: `url('/bg.svg')` }}
       data-sb-field-path={props['data-sb-field-path']}
     >

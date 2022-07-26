@@ -15,3 +15,8 @@ fields:
     items:
       type: model
       models: [Button]
+  - type: style
+    name: styles
+    styles:
+      self:
+        padding: ['twx0:16', 'twy0:16']

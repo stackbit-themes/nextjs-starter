@@ -14,6 +14,13 @@ sections:
       - label: Read the Docs
         url: 'https://docs.stackbit.com/'
         theme: secondary
+    styles:
+      self:
+        padding:
+          - pt-12
+          - pb-8
+          - pl-12
+          - pr-12
   - type: CardGridSection
     heading: Jump to Topic
     subheading: |

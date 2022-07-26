@@ -1,0 +1,14 @@
+{
+  "model": "Card",
+  "presets": [
+    {
+      "label": "Basic Card",
+      "thumbnail": "images/card--basic.png",
+      "data": {
+        "heading": "How Stackbit Works →",
+        "subheading": "Follow an end-to-end guide to learn the inner-workings of Stackbit.\n",
+        "url": "https://docs.stackbit.com/conceptual-guides/how-stackbit-works/"
+      }
+    }
+  ]
+}

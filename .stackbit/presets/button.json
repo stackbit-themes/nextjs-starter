@@ -1,0 +1,23 @@
+{
+  "model": "Button",
+  "presets": [
+    {
+      "label": "Solid Button",
+      "thumbnail": "images/button--solid.png",
+      "data": {
+        "label": "Start Building",
+        "url": "https://docs.stackbit.com/getting-started/",
+        "theme": "primary"
+      }
+    },
+    {
+      "label": "Outline Button",
+      "thumbnail": "images/button--outline.png",
+      "data": {
+        "label": "Read the Docs",
+        "url": "https://docs.stackbit.com/",
+        "theme": "secondary"
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "model": "HeroSection",
+  "presets": [
+    {
+      "label": "Default Hero",
+      "thumbnail": "images/hero-section--basic.png",
+      "data": {
+        "heading": "Welcome to Stackbit!",
+        "subheading": "You've just [unlocked visual editing capabilities](https://www.stackbit.com/) in this Next.js app.\n",
+        "buttons": [
+          {
+            "label": "Start Building",
+            "url": "https://docs.stackbit.com/getting-started/",
+            "theme": "primary",
+            "$$type": "Button"
+          },
+          {
+            "label": "Read the Docs",
+            "url": "https://docs.stackbit.com/",
+            "theme": "secondary",
+            "$$type": "Button"
+          }
+        ]
+      }
+    }
+  ]
+}

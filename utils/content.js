@@ -1,6 +1,5 @@
 import fs from 'fs';
 import path from 'path';
-import yaml from 'js-yaml';
 import glob from 'glob';
 import frontmatter from 'front-matter';
 import sbConfig from './../stackbit.config';

@@ -6,8 +6,7 @@ import FooterConfig from './.stackbit/models/FooterConfig';
 import HeroSection from './.stackbit/models/HeroSection';
 import SiteConfig from './.stackbit/models/SiteConfig';
 
-
-export default {
+const sbConfig = {
   stackbitVersion: '~0.5.0',
   ssgName: 'nextjs',
   cmsName: 'git',
@@ -30,3 +29,5 @@ export default {
     SiteConfig
   },
 };
+
+export default sbConfig;

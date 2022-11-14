@@ -1,10 +1,10 @@
-import Button from '.stackbit/models/Button';
-import Card from '.stackbit/models/Card';
-import Page from '.stackbit/models/Page';
-import CardGridSection from '.stackbit/models/CardGridSection';
-import FooterConfig from '.stackbit/models/FooterConfig';
-import HeroSection from '.stackbit/models/HeroSection';
-import SiteConfig from '.stackbit/models/SiteConfig';
+import Button from './.stackbit/models/Button';
+import Card from './.stackbit/models/Card';
+import Page from './.stackbit/models/Page';
+import CardGridSection from './.stackbit/models/CardGridSection';
+import FooterConfig from './.stackbit/models/FooterConfig';
+import HeroSection from './.stackbit/models/HeroSection';
+import SiteConfig from './.stackbit/models/SiteConfig';
 
 
 export default {

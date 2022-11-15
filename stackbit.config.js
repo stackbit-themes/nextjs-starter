@@ -13,6 +13,7 @@ const sbConfig = {
   nodeVersion: '16',
   dataDir: 'content/data',
   pagesDir: 'content/pages',
+  pageLayoutKey: 'type',
   assets: {
     referenceType: 'static',
     staticDir: 'public',
@@ -26,7 +27,7 @@ const sbConfig = {
     CardGridSection,
     FooterConfig,
     HeroSection,
-    SiteConfig
+    SiteConfig,
   },
 };
 

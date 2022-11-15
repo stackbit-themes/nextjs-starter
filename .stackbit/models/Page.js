@@ -2,6 +2,7 @@ module.exports = {
   name: 'Page',
   type: 'page',
   urlPath: '/{slug}',
+  newFilePath: '{slug}.md',
   hideContent: true,
   fields: [
     {

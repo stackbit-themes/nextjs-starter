@@ -1,5 +1,4 @@
 module.exports = {
-  name: 'CardGridSection',
   label: 'Card Grid',
   labelField: 'heading',
   groups: ['SectionComponents'],

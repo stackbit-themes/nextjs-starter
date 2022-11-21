@@ -1,6 +1,5 @@
 module.exports = {
   type: 'data',
-  name: 'SiteConfig',
   label: 'Site Config',
   singleInstance: true,
   fields: [

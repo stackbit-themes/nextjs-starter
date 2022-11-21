@@ -1,5 +1,4 @@
 module.exports = {
-  name: 'Button',
   labelField: 'label',
   fields: [
     { type: 'string', name: 'label', default: 'Click Me', required: true },

@@ -1,5 +1,4 @@
 module.exports = {
-  name: 'Card',
   labelField: 'heading',
   fields: [
     { type: 'string', name: 'heading', default: 'Card Heading' },

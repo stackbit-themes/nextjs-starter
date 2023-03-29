@@ -4,7 +4,6 @@ import { allModels } from './.stackbit/models';
 const sbConfig = {
   stackbitVersion: '~0.6.0',
   ssgName: 'nextjs',
-  cmsName: 'git',
   nodeVersion: '16',
   contentSources: [
     new GitContentSource({

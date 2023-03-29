@@ -1,8 +1,17 @@
-module.exports = {
+export const Button = {
+  type: 'object',
+  name: 'Button',
+  label: 'Button',
   labelField: 'label',
   fields: [
     { type: 'string', name: 'label', default: 'Click Me', required: true },
-    { type: 'string', name: 'url', label: 'URL', default: '/', required: true },
+    {
+      type: 'string',
+      name: 'url',
+      label: 'URL',
+      default: '/',
+      required: true,
+    },
     {
       type: 'enum',
       name: 'theme',

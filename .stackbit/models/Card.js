@@ -1,4 +1,7 @@
-module.exports = {
+export const Card = {
+  type: 'object',
+  name: 'Card',
+  label: 'Card',
   labelField: 'heading',
   fields: [
     { type: 'string', name: 'heading', default: 'Card Heading' },

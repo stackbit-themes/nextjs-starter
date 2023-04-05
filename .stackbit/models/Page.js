@@ -1,11 +1,7 @@
-export const Page = {
+module.exports = {
   type: 'page',
-  name: 'Page',
-  label: 'Page',
-  labelField: 'title',
-  hideContent: true,
   urlPath: '/{slug}',
-  filePath: 'content/pages/{slug}.md',
+  hideContent: true,
   fields: [
     {
       type: 'string',

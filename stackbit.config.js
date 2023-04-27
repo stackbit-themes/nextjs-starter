@@ -7,28 +7,28 @@ import HeroSection from './.stackbit/models/HeroSection';
 import SiteConfig from './.stackbit/models/SiteConfig';
 
 const sbConfig = {
-  stackbitVersion: '~0.5.0',
-  ssgName: 'nextjs',
-  cmsName: 'git',
-  nodeVersion: '16',
-  dataDir: 'content/data',
-  pagesDir: 'content/pages',
-  pageLayoutKey: 'type',
-  assets: {
-    referenceType: 'static',
-    staticDir: 'public',
-    uploadDir: 'images',
-    publicPath: '/',
-  },
-  models: {
-    Page,
-    Button,
-    Card,
-    CardGridSection,
-    FooterConfig,
-    HeroSection,
-    SiteConfig,
-  },
+    stackbitVersion: '~0.5.0',
+    ssgName: 'nextjs',
+    cmsName: 'git',
+    nodeVersion: '16',
+    dataDir: 'content/data',
+    pagesDir: 'content/pages',
+    pageLayoutKey: 'type',
+    assets: {
+        referenceType: 'static',
+        staticDir: 'public',
+        uploadDir: 'images',
+        publicPath: '/'
+    },
+    models: {
+        Page,
+        Button,
+        Card,
+        CardGridSection,
+        FooterConfig,
+        HeroSection,
+        SiteConfig
+    }
 };
 
 export default sbConfig;

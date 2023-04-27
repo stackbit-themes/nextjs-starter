@@ -15,6 +15,8 @@ export default sbConfig = {
     contentSources: [
         new GitContentSource({
             rootPath: __dirname,
+            repoBranch: process.env.REPO_WORKING_BRANCH,
+            repoUrl: process.env.REPO_REPO_URL,
             contentDirs: ['content'],
             models: [Button, Card, Page, CardGridSection, FooterConfig, HeroSection, SiteConfig],
             assetsConfig: {

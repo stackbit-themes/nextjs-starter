@@ -44,13 +44,6 @@ Open `localhost:8090/_stackbit`, register or sign in, and you will be directed t
 
 ![Next.js Dev + Stackbit Dev](https://assets.stackbit.com/docs/next-dev-stackbit-dev.png)
 
-## Cloud Project
-
-When creating a cloud project, you must set the following environment variables:
-
-- `REPO_WORKING_BRANCH`: Branch that Stackbit should use to commit changes. (This is usually `preview`.)
-- `REPO_REPO_URL`: URL to the remote GitHub host repository.
-
 ## Next Steps
 
 Here are a few suggestions on what to do next if you're new to Stackbit:

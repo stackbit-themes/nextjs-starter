@@ -1,6 +1,8 @@
-module.exports = {
+export const Page = {
+    name: 'Page',
     type: 'page',
     urlPath: '/{slug}',
+    filePath: 'content/pages/{slug}.md',
     hideContent: true,
     fields: [
         {
@@ -12,7 +14,7 @@ module.exports = {
         {
             type: 'list',
             name: 'sections',
-            items: { type: 'model', groups: ['SectionComponents'] }
+            items: { type: 'model', models: [], groups: ['SectionComponents'] }
         }
     ]
 };

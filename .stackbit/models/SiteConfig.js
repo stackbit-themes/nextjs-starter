@@ -1,4 +1,5 @@
-module.exports = {
+export const SiteConfig = {
+    name: 'SiteConfig',
     type: 'data',
     label: 'Site Config',
     singleInstance: true,

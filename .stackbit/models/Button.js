@@ -1,4 +1,6 @@
-module.exports = {
+export const Button = {
+    name: 'Button',
+    type: 'object',
     labelField: 'label',
     fields: [
         { type: 'string', name: 'label', default: 'Click Me', required: true },

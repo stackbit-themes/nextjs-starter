@@ -19,6 +19,8 @@
         "react-dom": "^18.2.0"
     },
     "devDependencies": {
+        "@stackbit/cms-git": "^0.3.0",
+        "@stackbit/types": "^0.6.0",
         "eslint": "^8.28.0",
         "eslint-config-next": "^13.0.4"
     }

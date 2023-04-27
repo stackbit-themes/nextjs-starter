@@ -1,4 +1,6 @@
-module.exports = {
+export const CardGridSection = {
+    name: 'CardGridSection',
+    type: 'object',
     label: 'Card Grid',
     labelField: 'heading',
     groups: ['SectionComponents'],

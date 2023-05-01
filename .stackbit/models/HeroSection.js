@@ -1,6 +1,4 @@
-export const HeroSection = {
-  type: 'object',
-  name: 'HeroSection',
+module.exports = {
   label: 'Hero',
   labelField: 'heading',
   groups: ['SectionComponents'],

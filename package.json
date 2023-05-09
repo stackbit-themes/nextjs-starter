@@ -1,25 +1,27 @@
 {
-  "name": "stackbit-nextjs-starter",
-  "version": "0.2.0",
-  "repository": "https://github.com/stackbit-themes/nextjs-starter",
-  "license": "MIT",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "export": "next export",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "front-matter": "^4.0.2",
-    "glob": "^8.0.3",
-    "markdown-to-jsx": "^7.1.7",
-    "next": "^13.0.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.28.0",
-    "eslint-config-next": "^13.0.4"
-  }
+    "name": "stackbit-nextjs-starter",
+    "version": "0.2.0",
+    "repository": "https://github.com/stackbit-themes/nextjs-starter",
+    "license": "MIT",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "export": "next export",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "front-matter": "^4.0.2",
+        "glob": "^8.0.3",
+        "markdown-to-jsx": "^7.1.7",
+        "next": "^13.0.4",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@stackbit/cms-git": "^0.3.0",
+        "@stackbit/types": "^0.6.0",
+        "eslint": "^8.28.0",
+        "eslint-config-next": "^13.0.4"
+    }
 }

@@ -14,13 +14,13 @@
         "front-matter": "^4.0.2",
         "glob": "^8.0.3",
         "markdown-to-jsx": "^7.2.0",
-        "next": "^13.4.2",
+        "next": "^13.4.4",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     },
     "devDependencies": {
-        "@stackbit/cms-git": "^0.3.3",
-        "@stackbit/types": "^0.7.0",
+        "@stackbit/cms-git": "^0.3.5",
+        "@stackbit/types": "^0.7.2",
         "eslint": "^8.28.0",
         "eslint-config-next": "^13.0.4"
     }
